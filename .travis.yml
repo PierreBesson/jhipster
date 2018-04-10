@@ -32,10 +32,9 @@ env:
     # environment properties
     - SPRING_OUTPUT_ANSI_ENABLED=ALWAYS
     - SPRING_JPA_SHOW_SQL=false
-
     # if JHIPSTER_BRANCH value is release, use the release from NPM
-    - JHIPSTER_REPO=https://github.com/jhipster/generator-jhipster.git
-    - JHIPSTER_BRANCH=master
+    - JHIPSTER_REPO=https://github.com/PierreBesson/generator-jhipster.git
+    - JHIPSTER_BRANCH=remove-profile-resource-and-improve-info-endpoint
 
   matrix:
     - JHIPSTER=ngx-default PROFILE=prod PROTRACTOR=1
