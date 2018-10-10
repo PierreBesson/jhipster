@@ -46,4 +46,11 @@ public class JHipsterInfoContributorConfiguration {
     public MailEnabledInfoContributor mailEnabledInfoContributor() {
         return new MailEnabledInfoContributor();
     }
+
+
+    @Bean
+    @ConditionalOnEnabledInfoContributor("management.info.swagger-enabled.enabled")
+    public SwaggerEnabledInfoContributor swagggerEnabledInfoContributor() {
+        return new SwaggerEnabledInfoContributor();
+    }
 }

@@ -6,9 +6,15 @@
         "defaultValue": true
     },
     {
+        "name": "management.info.swagger-enabled.enabled",
+        "type": "java.lang.Boolean",
+        "description": "Enable active-profiles info.",
+        "defaultValue": true
+    },
+    {
         "name": "management.info.mail-enabled.enabled",
         "type": "java.lang.Boolean",
-        "description": "Enable mail service info.",
+        "description": "Enable swagger-enabled info.",
         "defaultValue": false
     },
     {

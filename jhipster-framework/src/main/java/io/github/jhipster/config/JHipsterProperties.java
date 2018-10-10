@@ -645,6 +645,8 @@ public class JHipsterProperties {
 
     public static class Swagger {
 
+        private boolean enabled = JHipsterDefaults.Swagger.enabled;
+
         private String title = JHipsterDefaults.Swagger.title;
 
         private String description = JHipsterDefaults.Swagger.description;
@@ -670,6 +672,14 @@ public class JHipsterProperties {
         private String[] protocols = JHipsterDefaults.Swagger.protocols;
         
         private boolean useDefaultResponseMessages = JHipsterDefaults.Swagger.useDefaultResponseMessages;
+
+        public boolean isEnabled() {
+            return enabled;
+        }
+
+        public void setEnabled(boolean enabled) {
+            this.enabled = enabled;
+        }
 
         public String getTitle() {
             return title;

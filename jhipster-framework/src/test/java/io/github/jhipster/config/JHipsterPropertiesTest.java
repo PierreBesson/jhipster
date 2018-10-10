@@ -441,6 +441,16 @@ public class JHipsterPropertiesTest {
     }
 
     @Test
+    public void testSwaggerEnabled() {
+        JHipsterProperties.Swagger obj = properties.getSwagger();
+        boolean val = JHipsterDefaults.Swagger.enabled;
+        assertThat(obj.isEnabled()).isEqualTo(val);
+        val = true;
+        obj.setEnabled(val);
+        assertThat(obj.isEnabled()).isEqualTo(val);
+    }
+
+    @Test
     public void testSwaggerTitle() {
         JHipsterProperties.Swagger obj = properties.getSwagger();
         String val = JHipsterDefaults.Swagger.title;

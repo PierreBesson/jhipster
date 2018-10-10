@@ -62,7 +62,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
     Servlet.class,
     DispatcherServlet.class
 })
-@Profile(SPRING_PROFILE_SWAGGER)
+@ConditionalOnProperty("jhipster.swagger.enabled")
 @AutoConfigureAfter(JHipsterProperties.class)
 @EnableSwagger2
 @Import(BeanValidatorPluginsConfiguration.class)

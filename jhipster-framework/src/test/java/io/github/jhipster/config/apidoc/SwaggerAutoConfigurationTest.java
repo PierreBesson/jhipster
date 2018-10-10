@@ -69,6 +69,7 @@ public class SwaggerAutoConfigurationTest {
 
         final JHipsterProperties jHipsterProperties = new JHipsterProperties();
         properties = jHipsterProperties.getSwagger();
+        properties.setEnabled(true);
         properties.setHost("test.host.org");
         properties.setProtocols(new String[] { "http", "https" });
         properties.setTitle("test title");

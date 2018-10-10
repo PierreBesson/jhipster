@@ -133,7 +133,7 @@ public interface JHipsterDefaults {
     }
 
     interface Swagger {
-
+        boolean enabled = false;
         String title = "Application API";
         String description = "API documentation";
         String version = "0.0.1";
