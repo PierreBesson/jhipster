@@ -135,12 +135,10 @@ public class SpringfoxAutoConfiguration {
      * Springfox configuration for the management endpoints (actuator) OpenAPI docs.
      *
      * @param appName               the application name
-     * @param managementContextPath the path to access management endpoints
      * @return the Springfox configuration
      */
     @Bean
     @ConditionalOnClass(name = "org.springframework.boot.actuate.autoconfigure.web.server.ManagementServerProperties")
-    @ConditionalOnExpression("'${management.endpoints.web.base-path}'.length() > 0")
     @ConditionalOnMissingBean(name = "openAPISpringfoxManagementDocket")
     public Docket openAPISpringfoxManagementDocket(@Value("${spring.application.name:application}") String appName) {
 
